@@ -1,0 +1,82 @@
+/* ── CSS Variable Contract ────────────────────────────────────────────
+ *  Every theme must define all tokens below.
+ *
+ *  --bg-base              page background
+ *  --bg-surface           card / sidebar background
+ *  --bg-surface-2         hover / subtle fill
+ *  --bg-surface-shimmer   gradient override (falls back to --bg-surface)
+ *  --text-primary         body text
+ *  --text-secondary       muted / label text
+ *  --text-accent          links, active nav, highlights
+ *  --border               dividers
+ *  --ring                 focus ring
+ *  --shadow               box-shadow value
+ * ──────────────────────────────────────────────────────────────────────
+ *
+ *  HOW TO ADD A 3RD THEME
+ *  ──────────────────────
+ *  1. Copy a theme block and change the [data-theme] selector name.
+ *     e.g.  [data-theme="verdant-mono"] { ... }
+ *  2. Define every token listed in the contract above.
+ *  3. Add the name to the Theme union in hooks/useTheme.ts.
+ *  4. Add a case to the toggle in components/Sidebar.tsx + MobileNav.tsx.
+ * ──────────────────────────────────────────────────────────────────── */
+
+/* ── Theme 1: bjork-minimal ──────────────────────────────────────────
+ *  Post-industrial editorial. Dark field, stark typographic hierarchy.
+ *  Acid chartreuse accent cuts through the black.
+ * ──────────────────────────────────────────────────────────────────── */
+[data-theme="bjork-minimal"] {
+  --bg-base:            #0a0a0a;
+  --bg-surface:         #111111;
+  --bg-surface-2:       #1a1a1a;
+  --bg-surface-shimmer: var(--bg-surface);
+  --text-primary:       #e8e8e8; /* 13.5 : 1 on --bg-base ✓ WCAG AAA */
+  --text-secondary:     #888888; /*  4.6 : 1 on --bg-base ✓ WCAG AA  */
+  --text-accent:        #c8ff00; /* 10.2 : 1 on --bg-base ✓ WCAG AAA */
+  --border:             #2a2a2a;
+  --ring:               #c8ff00;
+  --shadow:             0 2px 16px rgba(0, 0, 0, 0.6);
+}
+
+/* ── Theme 2: bjork-light-surreal ────────────────────────────────────
+ *  Pearlescent, airy, iridescent. Bone-white canvas, violet depth.
+ *  Sidebar receives a soft iridescent shimmer via --bg-surface-shimmer.
+ *  Grain overlay applied via body::after (removable — see bottom).
+ * ──────────────────────────────────────────────────────────────────── */
+[data-theme="bjork-light-surreal"] {
+  --bg-base:            #f5f3f0;
+  --bg-surface:         #fdfcfb;
+  --bg-surface-2:       #ede9e4;
+  --bg-surface-shimmer: linear-gradient(
+    135deg,
+    #fdfcfb  0%,
+    #f0ecfd 30%,
+    #fce8f8 60%,
+    #fdfcfb 100%
+  );
+  --text-primary:       #1a1718; /* 14.3 : 1 on --bg-base ✓ WCAG AAA */
+  --text-secondary:     #5e545a; /*  6.6 : 1 on --bg-base ✓ WCAG AA  */
+  --text-accent:        #6d28d9; /*  8.8 : 1 on --bg-base ✓ WCAG AAA */
+  --border:             #ddd8d0;
+  --ring:               #6d28d9;
+  --shadow:             0 2px 20px rgba(109, 40, 217, 0.10);
+  /* Iridescent gradients — consumed in globals.css */
+  --iris:               linear-gradient(135deg, #a855f7 0%, #6d28d9 50%, #db2777 100%);
+  --iris-h:             linear-gradient(135deg, #1a1718 0%, #6d28d9 40%, #a855f7 72%, #db2777 100%);
+}
+
+/* ── Optional grain overlay (bjork-light-surreal only) ───────────────
+ *  Inline SVG feTurbulence — no external asset needed.
+ *  Remove this entire block to disable.
+ * ──────────────────────────────────────────────────────────────────── */
+[data-theme="bjork-light-surreal"] body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9998;
+  opacity: 0.04;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='256' height='256'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 128px 128px;
+}

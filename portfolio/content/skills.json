@@ -1,0 +1,20 @@
+{
+  "groups": [
+    {
+      "label": "Languages",
+      "items": ["TypeScript", "Python", "SQL", "HTML", "CSS"]
+    },
+    {
+      "label": "Frameworks & Libraries",
+      "items": ["React", "Next.js", "Node.js", "Tailwind CSS"]
+    },
+    {
+      "label": "Tools & Platforms",
+      "items": ["Git", "GitHub Actions", "VS Code", "Figma"]
+    },
+    {
+      "label": "Data",
+      "items": ["Pandas", "NumPy", "Jupyter", "PostgreSQL"]
+    }
+  ]
+}

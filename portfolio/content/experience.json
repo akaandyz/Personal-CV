@@ -1,0 +1,33 @@
+{
+  "roles": [
+    {
+      "id": "role-1",
+      "title": "TODO: Job Title",
+      "company": "TODO: Company Name",
+      "location": "TODO: City, Country",
+      "startDate": "2023-01",
+      "endDate": null,
+      "current": true,
+      "bullets": [
+        "TODO: Key achievement or responsibility.",
+        "TODO: Key achievement or responsibility.",
+        "TODO: Key achievement or responsibility."
+      ],
+      "tech": ["TypeScript", "React", "TODO"]
+    },
+    {
+      "id": "role-2",
+      "title": "TODO: Job Title",
+      "company": "TODO: Company Name",
+      "location": "TODO: City, Country",
+      "startDate": "2021-06",
+      "endDate": "2022-12",
+      "current": false,
+      "bullets": [
+        "TODO: Key achievement or responsibility.",
+        "TODO: Key achievement or responsibility."
+      ],
+      "tech": ["Python", "TODO"]
+    }
+  ]
+}

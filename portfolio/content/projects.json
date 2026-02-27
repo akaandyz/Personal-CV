@@ -1,0 +1,31 @@
+{
+  "projects": [
+    {
+      "id": "project-1",
+      "title": "TODO: Project Name",
+      "description": "TODO: One or two sentence description of what this project does and why it matters.",
+      "tags": ["Python", "TODO"],
+      "repoUrl": "https://github.com/TODO/repo",
+      "liveUrl": null,
+      "featured": true
+    },
+    {
+      "id": "project-2",
+      "title": "TODO: Project Name",
+      "description": "TODO: One or two sentence description of what this project does and why it matters.",
+      "tags": ["TypeScript", "React", "TODO"],
+      "repoUrl": "https://github.com/TODO/repo",
+      "liveUrl": "https://TODO.example.com",
+      "featured": true
+    },
+    {
+      "id": "project-3",
+      "title": "TODO: Project Name",
+      "description": "TODO: One or two sentence description of what this project does and why it matters.",
+      "tags": ["TODO"],
+      "repoUrl": "https://github.com/TODO/repo",
+      "liveUrl": null,
+      "featured": false
+    }
+  ]
+}

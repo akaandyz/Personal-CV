@@ -1,20 +1,28 @@
 {
   "groups": [
     {
-      "label": "Languages & Databases",
-      "items": ["Python", "SQL"]
-    },
-    {
       "label": "AI & Machine Learning",
-      "items": ["Machine Learning", "Artificial Intelligence", "Prompt Engineering", "Azure AI", "Knowledge Graphs", "OpenAI"]
+      "items": ["ML", "Deep Learning", "NLP", "LLMs", "RAG", "Predictive Modeling", "Forecasting", "Time Series", "Feature Engineering", "Model Deployment", "Prompt Engineering", "Fine-Tuning"]
     },
     {
-      "label": "Data & Analytics",
-      "items": ["Data Analysis", "Visualization & Integration", "Modeling & Forecasting", "Tableau", "Power BI"]
+      "label": "Cloud & MLOps",
+      "items": ["Azure OpenAI", "Azure ML", "Cognitive Search", "Knowledge Graphs", "Vector Databases", "CI/CD"]
+    },
+    {
+      "label": "Programming & Data",
+      "items": ["Python", "SQL", "Data Modeling", "ETL Pipelines", "Statistical Analysis"]
+    },
+    {
+      "label": "Agentic AI & Dev Tools",
+      "items": ["Claude Code", "Cursor", "GitHub Copilot", "GitHub Actions", "Git"]
+    },
+    {
+      "label": "Visualization & BI",
+      "items": ["Tableau", "Power BI", "Dashboard Design", "Data Visualization"]
     },
     {
       "label": "Domain Expertise",
-      "items": ["Biomedical Engineering", "Clinical Research Trials", "Regulatory & Compliance"]
+      "items": ["Government Healthcare", "Military Health Systems", "Clinical Research", "Biomedical Engineering", "FDA 510(k)", "EU MDR"]
     }
   ]
 }

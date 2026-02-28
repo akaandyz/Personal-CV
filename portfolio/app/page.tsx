@@ -16,7 +16,7 @@ export default function Home() {
       <TopSection />
       <AboutSection />
       <SkillsSection groups={skills.groups} />
-      <ExperienceSection roles={experience.roles} education={experience.education} />
+      <ExperienceSection roles={experience.roles} education={experience.education} certifications={experience.certifications} />
       <ProjectsSection projects={projects.projects} />
       <ContactSection />
     </PageLayout>

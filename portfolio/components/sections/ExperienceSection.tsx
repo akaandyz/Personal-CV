@@ -1,3 +1,5 @@
+import { BadgeCheck } from 'lucide-react';
+
 interface Role {
   id: string;
   title: string;
@@ -16,6 +18,11 @@ interface Education {
   year: number;
 }
 
+interface Certification {
+  name: string;
+  code: string;
+}
+
 function fmt(dateStr: string) {
   const [y, m] = dateStr.split('-');
   return new Date(+y, +m - 1).toLocaleDateString('en-US', {
@@ -24,7 +31,15 @@ function fmt(dateStr: string) {
   });
 }
 
-export default function ExperienceSection({ roles, education }: { roles: Role[]; education?: Education[] }) {
+export default function ExperienceSection({
+  roles,
+  education,
+  certifications,
+}: {
+  roles: Role[];
+  education?: Education[];
+  certifications?: Certification[];
+}) {
   return (
     <section id="experience" className="section">
       <h2 className="section-heading" tabIndex={-1}>
@@ -115,6 +130,23 @@ export default function ExperienceSection({ roles, education }: { roles: Role[];
               <li key={i} style={{ fontSize: '0.9375rem', color: 'var(--text-primary)' }}>
                 <span style={{ fontWeight: 500 }}>{ed.degree}</span>
                 <span style={{ color: 'var(--text-secondary)' }}> · {ed.institution} · {ed.year}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+
+      {certifications && certifications.length > 0 && (
+        <div style={{ marginTop: '2rem' }}>
+          <h3 style={{ fontSize: '1rem', fontWeight: 600, letterSpacing: '0.06em', textTransform: 'uppercase', color: 'var(--text-secondary)', marginBottom: '1rem' }}>
+            Certifications
+          </h3>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.625rem' }}>
+            {certifications.map((cert, i) => (
+              <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '0.625rem' }}>
+                <BadgeCheck size={16} style={{ color: 'var(--text-accent)', flexShrink: 0 }} />
+                <span style={{ fontWeight: 500, fontSize: '0.9375rem', color: 'var(--text-primary)' }}>{cert.name}</span>
+                <span className="skill-tag">{cert.code}</span>
               </li>
             ))}
           </ul>

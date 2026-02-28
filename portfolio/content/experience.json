@@ -2,39 +2,36 @@
   "roles": [
     {
       "id": "role-ey",
-      "title": "Senior Technology Consultant",
+      "title": "Data Scientist & Senior Technology Consultant",
       "company": "EY LLP",
       "location": "New York, NY",
       "startDate": "2021-01",
       "endDate": null,
       "current": true,
       "bullets": [
-        "Architect and deploy enterprise AI solutions leveraging Azure AI, OpenAI, and knowledge graphs to automate complex government and healthcare workflows.",
-        "Lead cross-functional teams in the delivery of data-driven platforms, translating stakeholder requirements into scalable ML pipelines and dashboards.",
-        "Design and implement prompt engineering frameworks that improve LLM accuracy and reduce hallucination rates in production environments.",
-        "Build and maintain Power BI and Tableau reporting ecosystems, enabling real-time operational visibility for federal agency clients.",
-        "Conduct model validation, bias assessments, and performance benchmarking to ensure regulatory compliance across AI deployments.",
-        "Collaborate with clients to define data governance strategies and establish standards for responsible AI use.",
-        "Mentor junior consultants on ML best practices, Python development, and Azure cloud infrastructure."
+        "Built LLM chatbots and RAG pipelines on Azure OpenAI for U.S. Military Hospitals, enabling secure clinical Q&A over unstructured patient records at enterprise scale.",
+        "Developed ML and forecasting models that optimized resource allocation across federal health agencies, directly reducing operational costs and manual planning overhead.",
+        "Engineered NLP pipelines and a knowledge graph to extract structured insights from unstructured clinical and policy data, accelerating analyst workflows.",
+        "Delivered real-time ML forecasting dashboards in Power BI and Tableau that cut policy response times by 50% for government healthcare clients.",
+        "Led cross-functional teams of 3–20 engineers, data scientists, and stakeholders, delivering 20+ high-impact analytics projects end-to-end.",
+        "Integrated Azure AI services (Cognitive Search, Azure ML, Azure OpenAI) into scalable cloud architectures for regulated government environments."
       ],
-      "tech": ["Python", "Azure AI", "OpenAI", "Power BI", "SQL", "Knowledge Graphs"]
+      "tech": ["Python", "Azure OpenAI", "Azure ML", "Power BI", "Tableau", "SQL", "Knowledge Graphs", "RAG", "NLP"]
     },
     {
       "id": "role-parkell",
       "title": "Analyst, Regulatory & Compliance Affairs",
-      "company": "Parkell Inc",
+      "company": "Parkell Inc.",
       "location": "Edgewood, NY",
       "startDate": "2020-01",
       "endDate": "2021-12",
       "current": false,
       "bullets": [
-        "Supported FDA 510(k) and CE Mark submissions by compiling and reviewing technical documentation for Class I and II medical devices.",
-        "Developed SQL-based tracking systems to monitor regulatory submission timelines and flag compliance gaps.",
-        "Collaborated with R&D and quality teams to interpret and apply ISO 13485 and FDA 21 CFR Part 820 standards.",
-        "Analyzed clinical trial data to identify adverse events and support post-market surveillance reporting.",
-        "Created process documentation and SOPs to standardize regulatory workflows across departments."
+        "Prepared FDA 510(k) submissions and Clinical Evaluation Reports for Class I/II medical devices; led EU MDR compliance transition from the legacy MDD framework.",
+        "Built a SQL and NetSuite-based sales analytics and forecasting system providing real-time revenue and inventory visibility across product lines.",
+        "Aligned R&D, quality, and marketing teams on regulatory strategy to reduce submission risk and accelerate product launch timelines."
       ],
-      "tech": ["SQL", "Python", "Regulatory & Compliance", "Clinical Research Trials"]
+      "tech": ["SQL", "NetSuite", "FDA 510(k)", "EU MDR", "Clinical Research"]
     },
     {
       "id": "role-elc",
@@ -45,25 +42,27 @@
       "endDate": "2020-12",
       "current": false,
       "bullets": [
-        "Built predictive models using Python and machine learning to forecast product performance and consumer sentiment from clinical and survey data.",
-        "Designed interactive Tableau dashboards that consolidated R&D KPIs, reducing manual reporting effort by over 40%.",
-        "Performed statistical analysis and A/B testing on formulation variants to guide product development decisions.",
-        "Integrated disparate data sources across clinical, consumer, and supply chain domains into unified analytical pipelines.",
-        "Presented data-driven findings to senior R&D leadership to inform ingredient sourcing and product launch strategies."
+        "Analyzed clinical patient datasets to enhance research protocol design and built predictive analytics models supporting published R&D findings.",
+        "Modernized data models and reporting pipelines, replacing manual workflows and enabling reproducible analysis for clinical research publications."
       ],
-      "tech": ["Python", "Tableau", "Machine Learning", "SQL", "Data Analysis"]
+      "tech": ["Python", "Tableau", "SQL", "Statistical Analysis", "Data Modeling"]
     }
   ],
   "education": [
     {
-      "degree": "BE Biomedical Engineering",
+      "degree": "B.Eng. Biomedical Engineering",
       "institution": "Stony Brook University",
       "year": 2019
     },
     {
-      "degree": "BS Applied Mathematics & Statistics",
+      "degree": "B.S. Applied Mathematics & Statistics",
       "institution": "Stony Brook University",
       "year": 2019
     }
+  ],
+  "certifications": [
+    { "name": "Azure AI Engineer Associate", "code": "AI-102" },
+    { "name": "Azure AI Fundamentals", "code": "AI-900" },
+    { "name": "Azure Fundamentals", "code": "AZ-900" }
   ]
 }

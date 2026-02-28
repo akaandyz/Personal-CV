@@ -23,16 +23,20 @@ export default function TopSection() {
 
   return (
     <section id="top" className="hero-section">
+      <div className="hero-bg-orbs" aria-hidden="true">
+        <span className="hero-orb hero-orb-1" />
+        <span className="hero-orb hero-orb-2" />
+      </div>
       <div>
         <p className="hero-eyebrow">Hi, I&apos;m</p>
         {/* tabIndex={-1} — receives programmatic focus from nav click */}
         <h1 className="hero-name" tabIndex={-1}>
           Andy Zheng
         </h1>
-        <p className="hero-role">Data Scientist · Senior Technology Consultant</p>
+        <p className="hero-role">Data Scientist &amp; AI/ML Engineer &nbsp;·&nbsp; Senior Technology Consultant</p>
         <p className="hero-tagline">
-          6+ years in analytics and ML, building AI-driven solutions that optimize
-          operations and enhance decision-making across government, healthcare, and enterprise.
+          6+ years delivering enterprise-scale ML, LLM applications, and RAG pipelines across
+          U.S. government healthcare and commercial sectors. Led 20+ high-impact projects end-to-end.
         </p>
         <a
           href="#projects"

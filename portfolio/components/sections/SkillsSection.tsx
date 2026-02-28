@@ -1,7 +1,18 @@
+import { Brain, Cloud, Code2, Bot, BarChart2, Building2 } from 'lucide-react';
+
 interface SkillGroup {
   label: string;
   items: string[];
 }
+
+const iconMap: Record<string, React.ReactNode> = {
+  'AI & Machine Learning': <Brain size={16} style={{ color: 'var(--text-secondary)', flexShrink: 0 }} />,
+  'Cloud & MLOps': <Cloud size={16} style={{ color: 'var(--text-secondary)', flexShrink: 0 }} />,
+  'Programming & Data': <Code2 size={16} style={{ color: 'var(--text-secondary)', flexShrink: 0 }} />,
+  'Agentic AI & Dev Tools': <Bot size={16} style={{ color: 'var(--text-secondary)', flexShrink: 0 }} />,
+  'Visualization & BI': <BarChart2 size={16} style={{ color: 'var(--text-secondary)', flexShrink: 0 }} />,
+  'Domain Expertise': <Building2 size={16} style={{ color: 'var(--text-secondary)', flexShrink: 0 }} />,
+};
 
 export default function SkillsSection({ groups }: { groups: SkillGroup[] }) {
   return (
@@ -14,7 +25,12 @@ export default function SkillsSection({ groups }: { groups: SkillGroup[] }) {
           const labelId = `skills-group-${group.label.toLowerCase().replace(/\W+/g, '-')}`;
           return (
             <div key={group.label}>
-              <span className="eyebrow" id={labelId}>
+              <span
+                className="eyebrow"
+                id={labelId}
+                style={{ display: 'flex', alignItems: 'center', gap: '0.375rem' }}
+              >
+                {iconMap[group.label]}
                 {group.label}
               </span>
               {/* role="list" restores list semantics stripped by list-style:none */}

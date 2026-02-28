@@ -27,12 +27,12 @@ export default function TopSection() {
         <p className="hero-eyebrow">Hi, I&apos;m</p>
         {/* tabIndex={-1} — receives programmatic focus from nav click */}
         <h1 className="hero-name" tabIndex={-1}>
-          Your Name
+          Andy Zheng
         </h1>
-        <p className="hero-role">Software Engineer · Builder · Creator</p>
+        <p className="hero-role">Data Scientist · Senior Technology Consultant</p>
         <p className="hero-tagline">
-          I build things for the web. Focused on clean code, thoughtful UX,
-          and turning ideas into real products.
+          6+ years in analytics and ML, building AI-driven solutions that optimize
+          operations and enhance decision-making across government, healthcare, and enterprise.
         </p>
         <a
           href="#projects"

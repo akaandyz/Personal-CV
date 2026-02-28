@@ -1,33 +1,69 @@
 {
   "roles": [
     {
-      "id": "role-1",
-      "title": "TODO: Job Title",
-      "company": "TODO: Company Name",
-      "location": "TODO: City, Country",
-      "startDate": "2023-01",
+      "id": "role-ey",
+      "title": "Senior Technology Consultant",
+      "company": "EY LLP",
+      "location": "New York, NY",
+      "startDate": "2021-01",
       "endDate": null,
       "current": true,
       "bullets": [
-        "TODO: Key achievement or responsibility.",
-        "TODO: Key achievement or responsibility.",
-        "TODO: Key achievement or responsibility."
+        "Architect and deploy enterprise AI solutions leveraging Azure AI, OpenAI, and knowledge graphs to automate complex government and healthcare workflows.",
+        "Lead cross-functional teams in the delivery of data-driven platforms, translating stakeholder requirements into scalable ML pipelines and dashboards.",
+        "Design and implement prompt engineering frameworks that improve LLM accuracy and reduce hallucination rates in production environments.",
+        "Build and maintain Power BI and Tableau reporting ecosystems, enabling real-time operational visibility for federal agency clients.",
+        "Conduct model validation, bias assessments, and performance benchmarking to ensure regulatory compliance across AI deployments.",
+        "Collaborate with clients to define data governance strategies and establish standards for responsible AI use.",
+        "Mentor junior consultants on ML best practices, Python development, and Azure cloud infrastructure."
       ],
-      "tech": ["TypeScript", "React", "TODO"]
+      "tech": ["Python", "Azure AI", "OpenAI", "Power BI", "SQL", "Knowledge Graphs"]
     },
     {
-      "id": "role-2",
-      "title": "TODO: Job Title",
-      "company": "TODO: Company Name",
-      "location": "TODO: City, Country",
-      "startDate": "2021-06",
-      "endDate": "2022-12",
+      "id": "role-parkell",
+      "title": "Analyst, Regulatory & Compliance Affairs",
+      "company": "Parkell Inc",
+      "location": "Edgewood, NY",
+      "startDate": "2020-01",
+      "endDate": "2021-12",
       "current": false,
       "bullets": [
-        "TODO: Key achievement or responsibility.",
-        "TODO: Key achievement or responsibility."
+        "Supported FDA 510(k) and CE Mark submissions by compiling and reviewing technical documentation for Class I and II medical devices.",
+        "Developed SQL-based tracking systems to monitor regulatory submission timelines and flag compliance gaps.",
+        "Collaborated with R&D and quality teams to interpret and apply ISO 13485 and FDA 21 CFR Part 820 standards.",
+        "Analyzed clinical trial data to identify adverse events and support post-market surveillance reporting.",
+        "Created process documentation and SOPs to standardize regulatory workflows across departments."
       ],
-      "tech": ["Python", "TODO"]
+      "tech": ["SQL", "Python", "Regulatory & Compliance", "Clinical Research Trials"]
+    },
+    {
+      "id": "role-elc",
+      "title": "Data Analyst, R&D",
+      "company": "The Estée Lauder Companies",
+      "location": "Melville, NY",
+      "startDate": "2019-01",
+      "endDate": "2020-12",
+      "current": false,
+      "bullets": [
+        "Built predictive models using Python and machine learning to forecast product performance and consumer sentiment from clinical and survey data.",
+        "Designed interactive Tableau dashboards that consolidated R&D KPIs, reducing manual reporting effort by over 40%.",
+        "Performed statistical analysis and A/B testing on formulation variants to guide product development decisions.",
+        "Integrated disparate data sources across clinical, consumer, and supply chain domains into unified analytical pipelines.",
+        "Presented data-driven findings to senior R&D leadership to inform ingredient sourcing and product launch strategies."
+      ],
+      "tech": ["Python", "Tableau", "Machine Learning", "SQL", "Data Analysis"]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BE Biomedical Engineering",
+      "institution": "Stony Brook University",
+      "year": 2019
+    },
+    {
+      "degree": "BS Applied Mathematics & Statistics",
+      "institution": "Stony Brook University",
+      "year": 2019
     }
   ]
 }

@@ -12,27 +12,27 @@ export default function ContactSection() {
       </p>
 
       <div className="contact-links">
-        <a href="mailto:you@example.com" className="contact-link">
+        <a href="mailto:akaandyzheng@gmail.com" className="contact-link">
           <Mail size={20} aria-hidden="true" />
-          you@example.com
+          akaandyzheng@gmail.com
         </a>
         <a
-          href="https://github.com/TODO"
+          href="https://github.com/akaandyz"
           target="_blank"
           rel="noopener noreferrer"
           className="contact-link"
         >
           <Github size={20} aria-hidden="true" />
-          github.com/TODO
+          github.com/akaandyz
         </a>
         <a
-          href="https://linkedin.com/in/TODO"
+          href="https://linkedin.com/in/andy-zheng-43b691159"
           target="_blank"
           rel="noopener noreferrer"
           className="contact-link"
         >
           <Linkedin size={20} aria-hidden="true" />
-          linkedin.com/in/TODO
+          linkedin.com/in/andy-zheng-43b691159
         </a>
       </div>
 
@@ -52,7 +52,7 @@ export default function ContactSection() {
         color: 'var(--text-secondary)',
         letterSpacing: '0.04em',
       }}>
-        Last updated: January 2025
+        Last updated: February 2026
       </p>
     </section>
   );

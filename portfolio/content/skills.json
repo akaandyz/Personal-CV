@@ -1,20 +1,20 @@
 {
   "groups": [
     {
-      "label": "Languages",
-      "items": ["TypeScript", "Python", "SQL", "HTML", "CSS"]
+      "label": "Languages & Databases",
+      "items": ["Python", "SQL"]
     },
     {
-      "label": "Frameworks & Libraries",
-      "items": ["React", "Next.js", "Node.js", "Tailwind CSS"]
+      "label": "AI & Machine Learning",
+      "items": ["Machine Learning", "Artificial Intelligence", "Prompt Engineering", "Azure AI", "Knowledge Graphs", "OpenAI"]
     },
     {
-      "label": "Tools & Platforms",
-      "items": ["Git", "GitHub Actions", "VS Code", "Figma"]
+      "label": "Data & Analytics",
+      "items": ["Data Analysis", "Visualization & Integration", "Modeling & Forecasting", "Tableau", "Power BI"]
     },
     {
-      "label": "Data",
-      "items": ["Pandas", "NumPy", "Jupyter", "PostgreSQL"]
+      "label": "Domain Expertise",
+      "items": ["Biomedical Engineering", "Clinical Research Trials", "Regulatory & Compliance"]
     }
   ]
 }

@@ -6,8 +6,10 @@ export default function AboutSection() {
       </h2>
       <div style={{ maxWidth: '42rem' }}>
         <p style={{ color: 'var(--text-secondary)', lineHeight: 1.85, fontSize: '1.0625rem' }}>
-          TODO: A short bio paragraph about you — your background, what you
-          care about, and what drives your work. Keep it human and direct.
+          Data Scientist Consultant with 6+ years in analytics, leveraging advanced machine
+          learning and AI to drive transformative insights. Proficient in Python, SQL, and Azure
+          AI tools, consistently delivering innovative solutions that optimize operations and
+          enhance decision-making across diverse sectors.
         </p>
       </div>
     </section>

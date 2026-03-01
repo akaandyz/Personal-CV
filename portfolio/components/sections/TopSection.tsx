@@ -1,52 +1,64 @@
 'use client';
 
+import { ArrowRight } from 'lucide-react';
 import { scrollToSection } from '@/lib/scrollToSection';
 
 export default function TopSection() {
-  function onMouseMove(e: React.MouseEvent<HTMLAnchorElement>) {
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-    const el = e.currentTarget;
-    const rect = el.getBoundingClientRect();
-    const x = (e.clientX - (rect.left + rect.width / 2)) * 0.18;
-    const y = (e.clientY - (rect.top + rect.height / 2)) * 0.14;
-    // No transition during tracking — instant magnetic follow
-    el.style.transition = 'box-shadow 0.25s ease';
-    el.style.transform = `translate(${x}px, ${y}px) scale(1.03)`;
-  }
-
-  function onMouseLeave(e: React.MouseEvent<HTMLAnchorElement>) {
-    const el = e.currentTarget;
-    // Spring back on leave
-    el.style.transition = 'transform 0.5s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 0.25s ease';
-    el.style.transform = '';
-  }
-
   return (
-    <section id="top" className="hero-section">
-      <div className="hero-bg-orbs" aria-hidden="true">
-        <span className="hero-orb hero-orb-1" />
-        <span className="hero-orb hero-orb-2" />
-      </div>
-      <div>
-        <p className="hero-eyebrow">Hi, I&apos;m</p>
-        {/* tabIndex={-1} — receives programmatic focus from nav click */}
-        <h1 className="hero-name" tabIndex={-1}>
-          Andy Zheng
-        </h1>
-        <p className="hero-role">Data Scientist &amp; AI/ML Engineer &nbsp;·&nbsp; Senior Technology Consultant</p>
-        <p className="hero-tagline">
-          6+ years delivering enterprise-scale ML, LLM applications, and RAG pipelines across
-          U.S. government healthcare and commercial sectors. Led 20+ high-impact projects end-to-end.
-        </p>
-        <a
-          href="#projects"
-          className="cta-btn"
-          onMouseMove={onMouseMove}
-          onMouseLeave={onMouseLeave}
-          onClick={(e) => { e.preventDefault(); scrollToSection('projects'); }}
+    <section id="top" className="bento-section bento-section-first">
+      <div className="bento-grid">
+        {/* Intro card */}
+        <div className="b-card b-card-dark b-span-7">
+          <div className="b-intro-badge">
+            <span className="b-intro-badge-dot" aria-hidden="true" />
+            Available for opportunities
+          </div>
+          <h1 className="b-intro-title" tabIndex={-1}>
+            Andy Zheng
+          </h1>
+          <p className="b-intro-sub">
+            Data Scientist &amp; AI/ML Engineer &nbsp;·&nbsp; Senior Technology Consultant
+          </p>
+          <a
+            href="#projects"
+            className="b-cta-btn"
+            onClick={(e) => { e.preventDefault(); scrollToSection('projects'); }}
+          >
+            View my work
+            <ArrowRight size={16} aria-hidden="true" />
+          </a>
+        </div>
+
+        {/* Photo / avatar card */}
+        <div className="b-card b-photo-bg b-span-5" aria-hidden="true">
+          <div className="b-avatar">AZ</div>
+        </div>
+
+        {/* Stat tiles */}
+        <div className="b-card b-card-blue b-span-3">
+          <span className="b-big-num">6+</span>
+          <span className="b-num-label">Years Experience</span>
+        </div>
+
+        <div className="b-card b-card-navy b-span-3">
+          <span className="b-big-num">20+</span>
+          <span className="b-num-label">Projects Delivered</span>
+        </div>
+
+        <div className="b-card b-card-green b-span-3">
+          <span className="b-big-num">50%</span>
+          <span className="b-num-label">Faster Policy Response</span>
+        </div>
+
+        <div
+          className="b-card b-span-3"
+          style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center' }}
         >
-          View my work
-        </a>
+          <span style={{ fontSize: '1.75rem' }}>🏅</span>
+          <span className="b-num-label" style={{ marginTop: '0.5rem', color: 'var(--text-secondary)' }}>
+            3× Azure Certified
+          </span>
+        </div>
       </div>
     </section>
   );

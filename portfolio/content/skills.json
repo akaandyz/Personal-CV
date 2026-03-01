@@ -23,6 +23,10 @@
     {
       "label": "Domain Expertise",
       "items": ["Government Healthcare", "Military Health Systems", "Clinical Research", "Biomedical Engineering", "FDA 510(k)", "EU MDR"]
+    },
+    {
+      "label": "Biomedical Research Study Design",
+      "items": ["Protocol Development", "Study Design Types", "Sample Size Calculation", "Randomization", "Blinding", "Data Collection", "Adverse Event Monitoring", "Statistical Analysis Plans", "Regulatory Compliance"]
     }
   ]
 }

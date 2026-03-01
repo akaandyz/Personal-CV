@@ -1,14 +1,32 @@
 import type { Metadata } from 'next';
+import { Syne, DM_Sans } from 'next/font/google';
 import './globals.css';
 
+const syne = Syne({
+  subsets: ['latin'],
+  variable: '--font-syne',
+  display: 'swap',
+});
+
+const dmSans = DM_Sans({
+  subsets: ['latin'],
+  variable: '--font-dm-sans',
+  display: 'swap',
+});
+
 export const metadata: Metadata = {
-  title: 'Portfolio',
-  description: 'Personal portfolio',
+  title: 'Andy Zheng — Data Scientist & AI/ML Engineer',
+  description: '6+ years delivering enterprise-scale ML, LLM, and RAG solutions.',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" data-theme="bjork-minimal" suppressHydrationWarning>
+    <html
+      lang="en"
+      data-theme="bjork-light-surreal"
+      suppressHydrationWarning
+      className={`${syne.variable} ${dmSans.variable}`}
+    >
       <head>
         {/*
           Restore persisted theme before first paint.

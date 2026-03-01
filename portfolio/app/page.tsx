@@ -1,3 +1,6 @@
+'use client';
+import { useState } from 'react';
+import CocoaGate from '@/components/CocoaGate';
 import PageLayout from '@/components/PageLayout';
 import TopSection from '@/components/sections/TopSection';
 import AboutSection from '@/components/sections/AboutSection';
@@ -11,14 +14,18 @@ import experience from '@/content/experience.json';
 import projects from '@/content/projects.json';
 
 export default function Home() {
+  const [hasVerified, setHasVerified] = useState(false);
   return (
-    <PageLayout>
-      <TopSection />
-      <AboutSection />
-      <SkillsSection groups={skills.groups} />
-      <ExperienceSection roles={experience.roles} education={experience.education} certifications={experience.certifications} />
-      <ProjectsSection projects={projects.projects} />
-      <ContactSection />
-    </PageLayout>
+    <>
+      {!hasVerified && <CocoaGate onComplete={() => setHasVerified(true)} />}
+      <PageLayout>
+        <TopSection />
+        <AboutSection />
+        <SkillsSection groups={skills.groups} />
+        <ExperienceSection roles={experience.roles} education={experience.education} certifications={experience.certifications} />
+        <ProjectsSection projects={projects.projects} />
+        <ContactSection />
+      </PageLayout>
+    </>
   );
 }

@@ -23,7 +23,9 @@ interface Props {
 export default function Sidebar({ activeSection, theme, onNavClick, onThemeToggle }: Props) {
   return (
     <aside className="sidebar" aria-label="Site navigation">
-      <div className="sidebar-logo">AK</div>
+      <div className="sidebar-logo">
+        <span className="sidebar-logo-mark" aria-hidden="true">AK</span>
+      </div>
 
       <nav className="sidebar-nav" aria-label="Main navigation">
         {NAV_ITEMS.map(({ id, label, Icon }) => (

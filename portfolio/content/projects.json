@@ -1,30 +1,24 @@
 {
   "projects": [
     {
-      "id": "project-1",
-      "title": "TODO: Project Name",
-      "description": "TODO: One or two sentence description of what this project does and why it matters.",
-      "tags": ["Python", "TODO"],
-      "repoUrl": "https://github.com/TODO/repo",
-      "liveUrl": null,
+      "id": "project-rag",
+      "title": "Enterprise RAG Chatbot Platform",
+      "description": "LLM chatbots using retrieval-augmented generation on Azure OpenAI for natural-language querying of large unstructured government datasets.",
+      "tags": ["Azure OpenAI", "RAG", "Python", "NLP", "LLMs"],
       "featured": true
     },
     {
-      "id": "project-2",
-      "title": "TODO: Project Name",
-      "description": "TODO: One or two sentence description of what this project does and why it matters.",
-      "tags": ["TypeScript", "React", "TODO"],
-      "repoUrl": "https://github.com/TODO/repo",
-      "liveUrl": "https://TODO.example.com",
+      "id": "project-hospital",
+      "title": "Military Hospital Resource Optimizer",
+      "description": "ML forecasting models optimising staff allocation and patient throughput across U.S. Military Hospitals, cutting policy response times by 50%.",
+      "tags": ["Azure ML", "Python", "Power BI", "SQL"],
       "featured": true
     },
     {
-      "id": "project-3",
-      "title": "TODO: Project Name",
-      "description": "TODO: One or two sentence description of what this project does and why it matters.",
-      "tags": ["TODO"],
-      "repoUrl": "https://github.com/TODO/repo",
-      "liveUrl": null,
+      "id": "project-stroke",
+      "title": "Stroke Door-to-Needle Time Analysis",
+      "description": "Statistical significance models bridging the gap between door-to-needle stroke drug administration to improve patient survival rates.",
+      "tags": ["Statistical Analysis", "Clinical Research", "Python"],
       "featured": false
     }
   ]

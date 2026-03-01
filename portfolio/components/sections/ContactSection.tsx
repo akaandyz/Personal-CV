@@ -2,58 +2,53 @@ import { Mail, Github, Linkedin, Download } from 'lucide-react';
 
 export default function ContactSection() {
   return (
-    <section id="contact" className="section">
-      <h2 className="section-heading" tabIndex={-1}>
-        Contact
-      </h2>
-      <p style={{ color: 'var(--text-secondary)', marginBottom: '2.5rem', maxWidth: '34rem', lineHeight: 1.85 }}>
-        Open to new opportunities and conversations. Reach out via any of the
-        links below.
-      </p>
+    <section id="contact" className="bento-section bento-section-last">
+      <div className="bento-grid">
+        <div className="b-card b-card-dark b-span-12">
+          <div className="b-contact-inner">
+            <div>
+              <p className="b-contact-msg">Open to new opportunities →</p>
+              <p className="b-contact-email">akaandyzheng@gmail.com</p>
+              <div className="b-contact-actions">
+                <a href="mailto:akaandyzheng@gmail.com" className="b-contact-btn">
+                  <Mail size={15} aria-hidden="true" />
+                  Send Email
+                </a>
+                <a
+                  href="/resume.pdf"
+                  download
+                  className="b-contact-btn-ghost"
+                  aria-label="Download resume as PDF"
+                >
+                  <Download size={15} aria-hidden="true" />
+                  Download CV
+                </a>
+              </div>
+            </div>
+          </div>
 
-      <div className="contact-links">
-        <a href="mailto:akaandyzheng@gmail.com" className="contact-link">
-          <Mail size={20} aria-hidden="true" />
-          akaandyzheng@gmail.com
-        </a>
-        <a
-          href="https://github.com/akaandyz"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="contact-link"
-        >
-          <Github size={20} aria-hidden="true" />
-          github.com/akaandyz
-        </a>
-        <a
-          href="https://linkedin.com/in/andy-zheng-43b691159"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="contact-link"
-        >
-          <Linkedin size={20} aria-hidden="true" />
-          linkedin.com/in/andy-zheng-43b691159
-        </a>
+          <div className="b-contact-socials">
+            <a
+              href="https://github.com/akaandyz"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="b-contact-social"
+            >
+              <Github size={15} aria-hidden="true" />
+              github.com/akaandyz
+            </a>
+            <a
+              href="https://linkedin.com/in/andy-zheng-43b691159"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="b-contact-social"
+            >
+              <Linkedin size={15} aria-hidden="true" />
+              linkedin.com/in/andy-zheng-43b691159
+            </a>
+          </div>
+        </div>
       </div>
-
-      <a
-        href="/resume.pdf"
-        download
-        className="resume-btn"
-        aria-label="Download resume as PDF"
-      >
-        <Download size={15} aria-hidden="true" />
-        Download Resume PDF
-      </a>
-
-      <p style={{
-        marginTop: '4rem',
-        fontSize: '0.75rem',
-        color: 'var(--text-secondary)',
-        letterSpacing: '0.04em',
-      }}>
-        Last updated: February 2026
-      </p>
     </section>
   );
 }

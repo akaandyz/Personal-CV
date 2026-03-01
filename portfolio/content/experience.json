@@ -9,11 +9,11 @@
       "endDate": null,
       "current": true,
       "bullets": [
-        "Built LLM chatbots and RAG pipelines on Azure OpenAI for U.S. Military Hospitals, enabling secure clinical Q&A over unstructured patient records at enterprise scale.",
-        "Developed ML and forecasting models that optimized resource allocation across federal health agencies, directly reducing operational costs and manual planning overhead.",
-        "Engineered NLP pipelines and a knowledge graph to extract structured insights from unstructured clinical and policy data, accelerating analyst workflows.",
-        "Delivered real-time ML forecasting dashboards in Power BI and Tableau that cut policy response times by 50% for government healthcare clients.",
-        "Led cross-functional teams of 3–20 engineers, data scientists, and stakeholders, delivering 20+ high-impact analytics projects end-to-end.",
+        "Built LLM chatbots and RAG pipelines on Azure OpenAI for Private and Government clients, enabling secure analysis at enterprise scale.",
+        "Developed ML and forecasting models that optimized resource allocation across federal agencies, directly reducing operational costs and manual planning overhead.",
+        "Engineered NLP pipelines and a knowledge graph to extract structured insights from unstructured enterprise and policy data, accelerating analyst workflows.",
+        "Delivered real-time ML forecasting dashboards in Power BI and Tableau that cut policy response times by 50% for government clients.",
+        "Led cross-functional teams of 3–20 engineers, data scientists, and stakeholders, delivering high-impact analytics projects end-to-end.",
         "Integrated Azure AI services (Cognitive Search, Azure ML, Azure OpenAI) into scalable cloud architectures for regulated government environments."
       ],
       "tech": ["Python", "Azure OpenAI", "Azure ML", "Power BI", "Tableau", "SQL", "Knowledge Graphs", "RAG", "NLP"]
@@ -43,9 +43,71 @@
       "current": false,
       "bullets": [
         "Analyzed clinical patient datasets to enhance research protocol design and built predictive analytics models supporting published R&D findings.",
+        "Conducted Patient Blind studies and statistical analyses to evaluate the efficacy of skincare products, contributing to market research and product development.",
         "Modernized data models and reporting pipelines, replacing manual workflows and enabling reproducible analysis for clinical research publications."
       ],
       "tech": ["Python", "Tableau", "SQL", "Statistical Analysis", "Data Modeling"]
+    },
+    {
+      "id": "role-northwell",
+      "title": "Research Assistant — Feinstein Institute",
+      "company": "Northwell Health",
+      "location": "New York City Metropolitan Area",
+      "startDate": "2018-05",
+      "endDate": "2018-09",
+      "current": false,
+      "bullets": [
+        "Coordinated with Neurology doctors, EMS personnel, and patients to identify and close the gap in door-to-needle time for stroke drug administration, contributing to improved survival rates.",
+        "Obtained and analyzed patient data to develop statistical significance models for academic publication.",
+        "Presented findings at the Feinstein Institute of Science Poster Symposium before an audience of physicians and researchers."
+      ],
+      "tech": ["Statistical Analysis", "Clinical Research", "Data Collection"]
+    },
+    {
+      "id": "role-sbu-fecal",
+      "title": "Student Researcher",
+      "company": "Stony Brook University",
+      "location": "New York City Metropolitan Area",
+      "startDate": "2017-01",
+      "endDate": "2019-01",
+      "current": false,
+      "bullets": [
+        "Led clinical research on the effectiveness of the Occult Guaiac Fecal Blood Test, a test used to detect hidden blood in stool samples.",
+        "Developed a prototype device to accurately analyze results from clinical diagnostic data.",
+        "Utilized MATLAB, Computer Vision and data analysis software to recode an app used by clinicians in medical settings.",
+        "Reviewed relevant literature, conducted statistical and biological research protocols to inform study design."
+      ],
+      "tech": ["MATLAB", "Clinical Research", "Data Analysis"]
+    },
+    {
+      "id": "role-sbu-biotech",
+      "title": "Student Researcher",
+      "company": "Stony Brook University",
+      "location": "New York City Metropolitan Area",
+      "startDate": "2014-08",
+      "endDate": "2015-01",
+      "current": false,
+      "bullets": [
+        "Conducted independent and group research in SUNY Stony Brook's Biotechnology Program.",
+        "Designed experimental protocols for gene expression assays.",
+        "Investigated extracellular serine protease activity in Staphylococcus epidermidis."
+      ],
+      "tech": ["Biotechnology", "Gene Expression", "Laboratory Research"]
+    },
+    {
+      "id": "role-intel",
+      "title": "Student Researcher",
+      "company": "Intel Labs (Intel ISEF / Society for Science)",
+      "location": "New York City Metropolitan Area",
+      "startDate": "2012-01",
+      "endDate": "2015-01",
+      "current": false,
+      "bullets": [
+        "Surveyed and analyzed student data and databases to study sleep patterns and their effects on academic and physiological outcomes.",
+        "Conducted lab research testing models across multiple organ systems.",
+        "Competed in the Intel Science and Engineering Fair through the Society for Science & the Public."
+      ],
+      "tech": ["Data Analysis", "Laboratory Research", "Survey Design"]
     }
   ],
   "education": [
